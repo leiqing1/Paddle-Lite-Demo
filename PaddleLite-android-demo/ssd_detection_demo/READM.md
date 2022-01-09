@@ -162,7 +162,8 @@ ssd_detection_demo/app/cpp/CMakeLists.txt
    Native 文件生成方法：
    ```
    cd app/src/java/com/baidu/paddle/lite/demo/ssd_detection
-   # 执行以下命令后，会在当前目录会生成包含 Native 方法的头文件，用户可以将其内容拷贝至 `cpp/Native.cc` 中。 注意：用户需要根据自己电脑上android-sdk路径，修改以下命令。
+   # 执行以下命令后，会在当前目录会生成包含 Native 方法的头文件，用户可以将其内容拷贝至 `cpp/Native.cc` 中。 
+   # 注意：用户需要根据自己电脑上android-sdk路径，修改以下命令。
    javac -classpath D:\dev\android-sdk\platforms\android-29\android.jar -encoding utf8 -h . Native.java   
    #
    ```
