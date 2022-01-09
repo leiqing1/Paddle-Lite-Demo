@@ -157,13 +157,14 @@ ssd_detection_demo/app/cpp/CMakeLists.txt
      
  ### C++ 端（native）
  * Native
-   实现 Java 与 C++ 端代码互传的桥梁功能，将 Java 数值转换为 c++ 数值，调用 c++ 端的完成人脸关键点检测功能
+   实现 Java 与 C++ 端代码互传的桥梁功能，将 Java 数值转换为 c++ 数值，调用 c++ 端的完成ssd目标检测功能
    **注意：**
    Native 文件生成方法：
    ```
-   cd app/src/java/com/baidu/paddle/lite/demo/face_keypoints_detection
-   # 在当前目录会生成包含 Native 方法的头文件，用户可以将其内容拷贝至 `cpp/Native.cc` 中
-   javac -classpath D:\dev\android-sdk\platforms\android-29\android.jar -encoding utf8 -h . Native.java 
+   cd app/src/java/com/baidu/paddle/lite/demo/ssd_detection
+   # 执行以下命令后，会在当前目录会生成包含 Native 方法的头文件，用户可以将其内容拷贝至 `cpp/Native.cc` 中。注意：用户需要根据自己电脑上android-sdk路径，修改以下命令。
+   javac -classpath D:\dev\android-sdk\platforms\android-29\android.jar -encoding utf8 -h . Native.java    #请问对android sdk版本有要求吗？
+   #
    ```
 
  * Pipeline
