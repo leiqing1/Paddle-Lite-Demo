@@ -179,7 +179,7 @@ ssd_detection_demo/app/cpp/CMakeLists.txt
 
 ## 代码讲解 （使用 Paddle Lite `C++ API` 执行预测）
 
-Android 示例基于 C++ API 开发，调用 Paddle Lite `C++s API` 包括以下五步。更详细的 `API` 描述参考：[Paddle Lite C++ API ](https://paddle-lite.readthedocs.io/zh/latest/api_reference/c++_api_doc.html)。
+Android 示例基于 C++ API 开发，调用 Paddle Lite `C++s API` 包括以下五步。更详细的 `API` 描述参考：[Paddle Lite C++ API ](https://paddle-lite.readthedocs.io/zh/latest/api_reference/cxx_api_doc.html)。
 
 ```c++
 #include <iostream>
