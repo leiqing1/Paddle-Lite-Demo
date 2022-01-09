@@ -162,8 +162,8 @@ ssd_detection_demo/app/cpp/CMakeLists.txt
    Native 文件生成方法：
    ```
    cd app/src/java/com/baidu/paddle/lite/demo/ssd_detection
-   # 执行以下命令后，会在当前目录会生成包含 Native 方法的头文件，用户可以将其内容拷贝至 `cpp/Native.cc` 中。注意：用户需要根据自己电脑上android-sdk路径，修改以下命令。
-   javac -classpath D:\dev\android-sdk\platforms\android-29\android.jar -encoding utf8 -h . Native.java    #请问对android sdk版本有要求吗？
+   # 执行以下命令后，会在当前目录会生成包含 Native 方法的头文件，用户可以将其内容拷贝至 `cpp/Native.cc` 中。 注意：用户需要根据自己电脑上android-sdk路径，修改以下命令。
+   javac -classpath D:\dev\android-sdk\platforms\android-29\android.jar -encoding utf8 -h . Native.java   
    #
    ```
 
@@ -180,6 +180,7 @@ ssd_detection_demo/app/cpp/CMakeLists.txt
 ## 代码讲解 （使用 Paddle Lite `C++ API` 执行预测）
 
 Android 示例基于 C++ API 开发，调用 Paddle Lite `C++s API` 包括以下五步。更详细的 `API` 描述参考：[Paddle Lite C++ API ](https://paddle-lite.readthedocs.io/zh/latest/api_reference/cxx_api_doc.html)。
+
 
 ```c++
 #include <iostream>
